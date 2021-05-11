@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchParent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/toolbar1"
+        style="@style/Wide"
+        android:layout_height="10dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/toolbar2"
+        style="@style/Wide"
+        android:layout_height="10dp"
+        android:background="#ff0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar1" />
+
+    <ImageView
+        android:id="@+id/toolbar3"
+        style="@style/Wide"
+        android:layout_height="10dp"
+        android:background="#085f8c"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar2" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintTop_toBottomOf="@id/toolbar3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tittleTextView"
+        style="@style/Wrap"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="14dp"
+        android:gravity="center"
+        android:background="#ff0000"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/video_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <TextView
+        android:id="@+id/tittle2TextView"
+        style="@style/Wrap"
+        android:layout_marginHorizontal="14dp"
+        android:gravity="center"
+        android:background="#ff0000"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/video_title_end"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tittleTextView" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/videoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        app:use_artwork="true"
+        app:layout_constraintTop_toBottomOf="@id/tittle2TextView"
+        app:layout_constraintBottom_toTopOf="@id/getMoneyTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/getMoneyTextView"
+        style="@style/Wide"
+        android:text="@string/enter_title"
+        android:gravity="center"
+        android:textSize="@dimen/medium_text_size"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@id/enterTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/enterTextView"
+        style="@style/Wide"
+        android:text="@string/enter_text"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_margin="12dp"
+        app:layout_constraintBottom_toTopOf="@id/enterButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/enterButton"
+        style="@style/Wrap"
+        android:layout_width="300dp"
+        android:text="@string/enter"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginBottom="60dp"
+        android:textSize="20sp"
+        android:elevation="24dp"
+        app:backgroundTint="@color/button_color"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        style="@style/Wide"
+        android:text="@string/ooo"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_margin="2dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

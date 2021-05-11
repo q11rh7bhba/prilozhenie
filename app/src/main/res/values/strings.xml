@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Газактив</string>
+
+    <string name="video_title">Досмотрите, пожалуйста,</string>
+    <string name="video_title_end">это видео до конца</string>
+    <string name="enter_title">Для участия в программе вам нужно авторизоваться.</string>
+    <string name="enter_text">Войдите или зарегистрируйтесь, нажав кнопку ниже</string>
+    <string name="enter">ВОЙТИ В КАБИНЕТ</string>
+    <string name="ooo">Все права защищены, любое использование и копирование данных преследуется по закону</string>
+    <string name="personal">Личный кабинет</string>
+    <string name="no_money">Текущий баланс: 0$</string>
+    <string name="no_deal">Количество сделок: 0</string>
+    <string name="account_not_confirmed">Аккаунт не подтверждён!</string>
+    <string name="go_to">Перейти к акциям</string>
+    <string name="registration_title">Получите полный доступ к проекту «Газактив» уже сейчас!</string>
+    <string name="name">Ваше имя</string>
+    <string name="surname">Ваша фамилия</string>
+    <string name="email">Ваш e-mail</string>
+    <string name="phone">Ваш номер телефона</string>
+    <string name="registration">Зарегистрироваться</string>
+    <string name="email_error">E-mail введён некорректно</string>
+    <string name="notification_channel_name">Registration</string>
+    <string name="notification_channel_description">Вы будите получать нотификаци с напоминанием завершить регистрацию</string>
+    <string name="notification_title">Зарабатывай от 2000$ в неделю</string>
+    <string name="notification_message">С помощью робота авто-трейдинга "Газактив" Вывод на карту любого банка. Доступ закроется сегодня</string>
+
+    <string name="facebook_app_id">787905258830459</string>
+    <string name="fb_login_protocol_scheme">fb787905258830459</string>
+
+</resources>

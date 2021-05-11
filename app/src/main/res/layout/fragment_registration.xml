@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchParent"
+    android:background="@color/white">
+
+    <ScrollView
+        style="@style/MatchParent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/MatchParent">
+
+            <TextView
+                android:id="@+id/tittleTextView"
+                style="@style/Wide"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="22sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:text="@string/registration_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nameCardView"
+                style="@style/Wrap"
+                android:layout_width="0dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tittleTextView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    style="@style/Wide">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/nameInputLayout"
+                        style="@style/Wide"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nameEditText"
+                            style="@style/Wide"
+                            android:hint="@string/name"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/montserrat_thin"
+                            android:textColor="@color/black"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/surnameCardView"
+                style="@style/Wrap"
+                android:layout_width="0dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameCardView">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/surnameInputLayout"
+                    style="@style/Wide">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/surnameEditText"
+                        style="@style/Wide"
+                        android:hint="@string/surname"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/montserrat_thin"
+                        android:textColor="@color/black"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/emailCardView"
+                style="@style/Wrap"
+                android:layout_width="0dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/surnameCardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    style="@style/Wide" >
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/emailInputLayout"
+                        style="@style/Wide"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/emailEditText"
+                            style="@style/Wide"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/montserrat_thin"
+                            android:textColor="@color/black"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/emailErrorTextView"
+                        style="@style/Wrap"
+                        android:visibility="gone"
+                        android:layout_margin="4dp"
+                        android:text="@string/email_error"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/montserrat_thin"
+                        android:textColor="@android:color/holo_red_light"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/emailInputLayout"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/phoneCardView"
+                style="@style/Wrap"
+                android:layout_width="0dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailCardView">
+
+                <LinearLayout
+                    style="@style/Wide"
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/codePicker"
+                        style="@style/Wrap"
+                        android:layout_gravity="bottom"
+                        app:ccp_showArrow="false"
+                        app:ccp_autoDetectCountry="true"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/phoneInputLayout"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/phoneEditText"
+                            style="@style/Wide"
+                            android:hint="@string/phone"
+                            android:inputType="phone"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/montserrat_thin"
+                            android:textColor="@color/black"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/registrationButton"
+                style="@style/Wrap"
+                android:text="@string/registration"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_semibold"
+                android:padding="16dp"
+                android:layout_marginTop="20dp"
+                android:enabled="false"
+                app:backgroundTint="@color/button_color"
+                app:cornerRadius="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phoneCardView"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
